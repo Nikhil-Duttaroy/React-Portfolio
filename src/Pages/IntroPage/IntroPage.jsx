@@ -10,10 +10,10 @@ const IntroPage = () => {
         </header>
         <div className='container'>
           <div className='navWrapper'>
-            <div class='themeDiv'>
-              <div class='themeDot' data-mode='light' id='light'></div>
-              <div class='themeDot' data-mode='pink' id='pink'></div>
-              <div class='themeDot' data-mode='dark' id='dark'></div>
+            <div className='themeDiv'>
+              <div className='themeDot' data-mode='light' id='light'></div>
+              <div className='themeDot' data-mode='pink' id='pink'></div>
+              <div className='themeDot' data-mode='dark' id='dark'></div>
             </div>
             <nav>
               <ul id='navigation'>
@@ -24,24 +24,24 @@ const IntroPage = () => {
             </nav>
           </div>
 
-          <div class='leftColumn'>
-            <div class='imageContainer'>
+          <div className='leftColumn'>
+            <div className='imageContainer'>
               <img src='../../assets/images/profile.jpeg' alt='Profile Image' id='profile' />
-              <a href='#' class='button'>
+              <a href='#' className='button'>
                 Contact Me
               </a>
             </div>
           </div>
 
-          <div class='rightColumn'>
-            <div class='preview'>
-              <div class='overlays' id='overlay1'>
-                <h4 class='typing'>Hi , I am Nikhil Duttaroy</h4>
+          <div className='rightColumn'>
+            <div className='preview'>
+              <div className='overlays' id='overlay1'>
+                <h4 className='typing'>Hi , I am Nikhil Duttaroy</h4>
               </div>
-              <div class='overlays' id='overlay2'>
+              <div className='overlays' id='overlay2'>
                 <h4>Front - End Developer</h4>
               </div>
-              <div class='overlays' id='overlay3'>
+              <div className='overlays' id='overlay3'>
                 <h4>Engineering Student</h4>
               </div>
             </div>

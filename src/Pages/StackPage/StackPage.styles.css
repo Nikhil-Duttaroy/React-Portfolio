@@ -1,0 +1,105 @@
+.aboutWrapper {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 5px;
+}
+
+.aboutMe{
+  width: 50%;
+}
+
+.tech_container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  justify-items: center;
+  border-right: 1px solid var(--borderColor) ;
+}
+
+.block{
+display: flex;
+flex-direction: column;
+}
+
+.icons {
+  width: 6rem;
+  padding: 1rem;
+}
+
+.icon_name{
+  align-self: center;
+}
+
+.socialLinks{
+    width: 50%;
+}
+
+.social_container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.social_block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  
+}
+
+.social_block a{
+  background: linear-gradient(to right, #00d0ff, var(--fontColor) 60%, var(--fontColor) 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none;
+}
+.social_block a:hover{
+    background-position: 0 100%;  
+}
+
+.social_img{
+  width: 6rem;
+  padding: 1rem;
+}
+
+.downloadbtn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    .mainContainer{
+      display: block;
+    }
+  
+   .socialLinks{
+    padding: 1rem;
+    width: 100%;
+  } 
+  
+  .aboutWrapper{
+    display: flex;
+    justify-content: center;
+    flex-basis: 500px;
+    flex-direction: column;
+  }
+  .tech_container{
+    padding: 1rem;
+    border-right:none;
+    border-bottom: 1px solid var(--borderColor) ;
+  }
+  .social_block{
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px dashed var(--borderColor);
+  }
+
+  .aboutMe{
+    width:100%;
+  }
+}

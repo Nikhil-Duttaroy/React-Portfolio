@@ -9,13 +9,13 @@ const ContactPage = () => {
 
         <form
           id='contact-form'
-          action='POST'
+          method='POST'
           name='ContactForm'
           data-netlify='true'
           data-netlify-recaptcha='true'
           netlify-honeypot='bot-field'
         >
-          <input type='hidden' name='form-name' value='ContactForm' />
+          <input type='hidden' name='ContactForm' value='ContactForm' />
           <label>Name</label>
           <input
             required

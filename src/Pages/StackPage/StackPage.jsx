@@ -131,7 +131,7 @@ const StackPage = () => {
 
         <div className='downloadbtn'>
           <a
-            href='images/Nikhil-Duttaroy-Resume 08-2021.pdf'
+            href='/assets/images/Resume.pdf'
             download='Nikhil-Duttaroy Resume'
           >
             <button className='button'>Download Resume</button>

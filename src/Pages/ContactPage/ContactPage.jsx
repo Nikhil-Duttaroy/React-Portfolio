@@ -3,7 +3,7 @@ import './ContactPage.styles.css'
 
 const ContactPage = () => {
   return (
-    <section className='S2' id="contact">
+    <section className='S2' id='contact'>
       <div className='mainContainer'>
         <h3 style={{ textAlign: "center", marginTop: "1rem" }}>Contact Form</h3>
 
@@ -15,6 +15,7 @@ const ContactPage = () => {
           data-netlify-recaptcha='true'
           netlify-honeypot='bot-field'
         >
+          <input type='hidden' name='form-name' value='ContactForm' />
           <label>Name</label>
           <input
             required
@@ -25,15 +26,32 @@ const ContactPage = () => {
           />
 
           <label>Subject</label>
-          <input required className='input-field' type='text' name='subject' placeholder='I want a XYZ'/>
+          <input
+            required
+            className='input-field'
+            type='text'
+            name='subject'
+            placeholder='I want a XYZ'
+          />
 
           <label>Email</label>
-          <input required className='input-field' type='text' name='email' placeholder='Guest@email.com'/>
+          <input
+            required
+            className='input-field'
+            type='text'
+            name='email'
+            placeholder='Guest@email.com'
+          />
 
           <label>Message</label>
-          <textarea required className='input-field' name='message' placeholder='Your Message'></textarea>
+          <textarea
+            required
+            className='input-field'
+            name='message'
+            placeholder='Your Message'
+          ></textarea>
 
-          <p className='hidden' style={{visibility: 'hidden', height: '0'}}>
+          <p className='hidden' style={{ visibility: "hidden", height: "0" }}>
             <label>
               Don’t fill this out if you're human: <input name='bot-field' />
             </label>

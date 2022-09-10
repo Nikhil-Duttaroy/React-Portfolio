@@ -68,3 +68,29 @@ h5 {
 .button:hover{
   background-color: #06cdfa;
 }
+
+.S1 {
+  background-color: var(--primaryColor);
+  width: 100%;
+  /* height: 100vh; */
+  border-bottom: 2px solid var(--borderColor);
+  overflow: auto;
+}
+
+.S2 {
+  background-color: var(--secondaryColor);
+  width: 100%;
+  border-bottom: 1px solid var(--borderColor);
+  overflow: auto;
+}
+
+.mainContainer {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1366px) {
+  .mainContainer {
+    width: 90%;
+  }
+}

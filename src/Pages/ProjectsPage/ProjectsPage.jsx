@@ -6,7 +6,7 @@ import { ProjectDetails } from "../../ProjectDetails.js";
 
 const ProjectsPage = () => {
   return (
-    <section className='S1'>
+    <section className='S1' id="projects">
       <div className='mainContainer'>
         <h3 style={{ textAlign: "center" ,marginTop:"1rem"}}>Projects</h3>
         <div className='Projects'>

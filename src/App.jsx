@@ -1,4 +1,6 @@
 import './App.css'
+import { BrowserRouter as Router} from "react-router-dom";
+
 import IntroPage from './Pages/IntroPage/IntroPage';
 import StackPage from './Pages/StackPage/StackPage';
 import ProjectsPage from './Pages/ProjectsPage/ProjectsPage';
@@ -8,13 +10,15 @@ function App() {
   
 
   return (
-    <div className="App">
-      <IntroPage></IntroPage>
-      <StackPage></StackPage>
-      <ProjectsPage></ProjectsPage>
-      <ContactPage></ContactPage>
+    <div className='App'>
+      <Router>
+        <IntroPage />
+        <StackPage></StackPage>
+        <ProjectsPage></ProjectsPage>
+        <ContactPage></ContactPage>
+      </Router>
     </div>
-  )
+  );
 }
 
 export default App

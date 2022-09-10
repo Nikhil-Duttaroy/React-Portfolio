@@ -1,4 +1,6 @@
 import React from 'react'
+import { HashLink as Link} from 'react-router-hash-link';
+
 import './IntroPage.styles.css'
 
 const IntroPage = () => {
@@ -16,9 +18,11 @@ const IntroPage = () => {
               <div className='themeDot' data-mode='dark' id='dark'></div>
             </div>
             <nav>
+              
               <ul id='navigation'>
+
                 <li>
-                  <a href='#third'>Projects</a>
+                  <Link smooth to="#projects">Projects</Link>
                 </li>
               </ul>
             </nav>
@@ -26,10 +30,14 @@ const IntroPage = () => {
 
           <div className='leftColumn'>
             <div className='imageContainer'>
-              <img src='../../assets/images/profile.jpeg' alt='Profile Image' id='profile' />
-              <a href='#' className='button'>
+              <img
+                src='../../assets/images/profile.jpeg'
+                alt='Profile Image'
+                id='profile'
+              />
+              <Link to="#contact" className='button'>
                 Contact Me
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -46,7 +54,6 @@ const IntroPage = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

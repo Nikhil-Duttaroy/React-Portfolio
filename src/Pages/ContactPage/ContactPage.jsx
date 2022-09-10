@@ -3,7 +3,7 @@ import './ContactPage.styles.css'
 
 const ContactPage = () => {
   return (
-    <section className='S2'>
+    <section className='S2' id="contact">
       <div className='mainContainer'>
         <h3 style={{ textAlign: "center", marginTop: "1rem" }}>Contact Form</h3>
 

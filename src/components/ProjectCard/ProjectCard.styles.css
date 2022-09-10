@@ -1,0 +1,36 @@
+.card{
+  width: 250px;
+  height: 350px;
+  /* height: max-content;  */
+  background-color: var(--secondaryColor);
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius:15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+
+.visitMe {
+  background-color: var(--borderColor);
+  border-radius: 10px;
+  color: var(--secondaryFontColor);
+  width: max-content;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}
+.visitMe:hover {
+  /* border: 2px solid var(--themeBorder); */
+  color: var(--borderColor);
+  Background-color: var(--secondaryFontColor);
+}

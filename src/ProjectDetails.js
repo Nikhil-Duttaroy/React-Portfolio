@@ -9,9 +9,9 @@ export const ProjectDetails = [
   {
     id: 2,
     Name: "TextCollabo",
-    imgLink: "assets/images/Shoopers.png",
-    siteLink: "https://shoopersloop.herokuapp.com/",
-    githubLink: "https://github.com/Nikhil-Duttaroy/ShoopersLoop",
+    imgLink: "assets/images/TextCollabo.png",
+    siteLink: "https://textcollabo.up.railway.app/",
+    githubLink: "https://github.com/Nikhil-Duttaroy/Online-Text-Collab",
   },
   {
     id: 3,
@@ -30,9 +30,10 @@ export const ProjectDetails = [
   {
     id: 5,
     Name: "React Contact Manager",
-    imgLink: "assets/images/basic.png",
-    siteLink: "https://simple-portfolio-design.netlify.app",
-    githubLink: "https://github.com/Nikhil-Duttaroy/Basic-Portfolio",
+    imgLink: "assets/images/contact.png",
+    siteLink: "https://react-contactmanager.herokuapp.com/",
+    githubLink:
+      "https://github.com/Nikhil-Duttaroy/React-Materialize-Contact-Manager",
   },
   {
     id: 6,

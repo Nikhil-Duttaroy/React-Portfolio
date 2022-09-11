@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 
 import "./IntroPage.styles.css";
 
-const IntroPage = () => {
+const IntroPage = ({changeTheme}) => {
 
   useEffect(() => {
     gsap.from("#overlay2", {
@@ -34,9 +34,25 @@ const IntroPage = () => {
         <div className='container'>
           <div className='navWrapper'>
             <div className='themeDiv'>
-              <div className='themeDot' data-mode='light' id='light'></div>
-              <div className='themeDot' data-mode='pink' id='pink'></div>
-              <div className='themeDot' data-mode='dark' id='dark'></div>
+              <div
+                className='themeDot'
+                data-mode='light'
+                id='light'
+                onClick={() => {changeTheme("light")
+              }}
+              ></div>
+              <div
+                className='themeDot'
+                data-mode='pink'
+                id='pink'
+                onClick={() => changeTheme("pink")}
+              ></div>
+              <div
+                className='themeDot'
+                data-mode='dark'
+                id='dark'
+                onClick={() => changeTheme("dark")}
+              ></div>
             </div>
             <nav>
               <ul id='navigation'>
@@ -64,13 +80,13 @@ const IntroPage = () => {
 
           <div className='rightColumn'>
             <div className='preview'>
-              <div className='overlays' id='overlay1' >
+              <div className='overlays' id='overlay1'>
                 <h4 className='typing'>Hi , I am Nikhil Duttaroy</h4>
               </div>
-              <div className='overlays' id='overlay2' >
+              <div className='overlays' id='overlay2'>
                 <h4>Front - End Developer</h4>
               </div>
-              <div className='overlays' id='overlay3' >
+              <div className='overlays' id='overlay3'>
                 <h4>Engineering Graduate</h4>
               </div>
             </div>

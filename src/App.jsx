@@ -6,13 +6,27 @@ import StackPage from './Pages/StackPage/StackPage';
 import ProjectsPage from './Pages/ProjectsPage/ProjectsPage';
 import ContactPage from './Pages/ContactPage/ContactPage';
 
+import useLocalStorage from "use-local-storage";
+import { useEffect } from 'react';
+
+
 function App() {
+
+  const [theme, setTheme] = useLocalStorage('theme' , 'dark');
   
+  const changeTheme = (themeName) =>{ 
+    console.log(themeName);
+    setTheme(themeName)
+  }
+
+  // useEffect(() => {
+    
+  // })
 
   return (
-    <div className='App'>
+    <div className='App' data-theme={theme}>
       <Router>
-        <IntroPage />
+        <IntroPage changeTheme={changeTheme}/>
         <StackPage></StackPage>
         <ProjectsPage></ProjectsPage>
         <ContactPage></ContactPage>

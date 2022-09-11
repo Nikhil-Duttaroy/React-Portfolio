@@ -71,7 +71,7 @@ const IntroPage = () => {
                 <h4>Front - End Developer</h4>
               </div>
               <div className='overlays' id='overlay3' >
-                <h4>Engineering Student</h4>
+                <h4>Engineering Graduate</h4>
               </div>
             </div>
           </div>

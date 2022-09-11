@@ -1,9 +1,30 @@
-import React from 'react'
-import { HashLink as Link} from 'react-router-hash-link';
+import { React, useEffect } from "react";
+import { HashLink as Link } from "react-router-hash-link";
+import { gsap } from "gsap";
 
-import './IntroPage.styles.css'
+import "./IntroPage.styles.css";
 
 const IntroPage = () => {
+
+  useEffect(() => {
+    gsap.from("#overlay2", {
+      duration: 1.5,
+      delay: 1,
+      y: "-15px",
+      x: "-5px",
+      opacity: 0,
+      ease: "slow",
+    });
+    gsap.from("#overlay3", {
+      duration: 1.5,
+      delay: 2.5,
+      y: "-15px",
+      x: "-5px",
+      opacity: 0,
+      ease: "slow",
+    });
+  });
+
   return (
     <section className='S1'>
       <div className='mainContainer'>
@@ -18,11 +39,11 @@ const IntroPage = () => {
               <div className='themeDot' data-mode='dark' id='dark'></div>
             </div>
             <nav>
-              
               <ul id='navigation'>
-
                 <li>
-                  <Link smooth to="#projects">Projects</Link>
+                  <Link smooth to='#projects'>
+                    Projects
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -35,7 +56,7 @@ const IntroPage = () => {
                 alt='Profile Image'
                 id='profile'
               />
-              <Link to="#contact" className='button'>
+              <Link to='#contact' className='button'>
                 Contact Me
               </Link>
             </div>
@@ -43,13 +64,13 @@ const IntroPage = () => {
 
           <div className='rightColumn'>
             <div className='preview'>
-              <div className='overlays' id='overlay1'>
+              <div className='overlays' id='overlay1' >
                 <h4 className='typing'>Hi , I am Nikhil Duttaroy</h4>
               </div>
-              <div className='overlays' id='overlay2'>
+              <div className='overlays' id='overlay2' >
                 <h4>Front - End Developer</h4>
               </div>
-              <div className='overlays' id='overlay3'>
+              <div className='overlays' id='overlay3' >
                 <h4>Engineering Student</h4>
               </div>
             </div>
@@ -58,6 +79,6 @@ const IntroPage = () => {
       </div>
     </section>
   );
-}
+};
 
-export default IntroPage
+export default IntroPage;

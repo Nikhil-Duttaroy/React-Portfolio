@@ -3,7 +3,7 @@ export const ProjectDetails = [
     id: 1,
     Name: "Voice Enabled E-commerce App",
     imgLink: "assets/images/Shoopers.png",
-    siteLink: "https://shoopersloop.herokuapp.com/",
+    siteLink: "https://shoppersloop.onrender.com/",
     githubLink: "https://github.com/Nikhil-Duttaroy/ShoopersLoop",
   },
   {

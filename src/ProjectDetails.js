@@ -10,7 +10,7 @@ export const ProjectDetails = [
     id: 2,
     Name: "TextCollabo",
     imgLink: "assets/images/TextCollabo.png",
-    siteLink: "https://textcollabo.up.railway.app/",
+    siteLink: "https://textcollabo.onrender.com/",
     githubLink: "https://github.com/Nikhil-Duttaroy/Online-Text-Collab",
   },
   {

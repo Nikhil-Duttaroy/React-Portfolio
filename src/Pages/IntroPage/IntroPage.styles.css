@@ -121,7 +121,7 @@ header {
 .overlays {
   font-weight: normal;
   font-family: Shadows Into Light Two;
-  width: max-content;
+  width: clamp(100px,300px,300px);
   display: block;
   margin: 15px;
   position: absolute;
@@ -173,14 +173,19 @@ header {
     border-left: 3px solid var(--borderColor);
     border-bottom: 3px solid var(--borderColor);
     box-shadow: -5px 3px 5px var(--overlayColor);
-    width: max-content;
+    width: fit-content;
     display: block;
-    /* margin: 15px; */
+    padding-right: 4px;
     position: absolute;
     color: #000000;
     padding: 0px;
-    background-color: var(--secondaryColor);
+    background-color: var(--overlayColor);
+    color: var(--secondaryFontColor);
+
     height: inherit;
+  }
+  .typing{
+    padding-right: 4px;
   }
   #overlay1 {
     padding-left: 20px;

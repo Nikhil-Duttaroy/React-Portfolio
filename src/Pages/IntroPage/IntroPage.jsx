@@ -1,11 +1,10 @@
-import { React, useEffect } from "react";
+import React, { useEffect } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { gsap } from "gsap";
 
 import "./IntroPage.styles.css";
 
-const IntroPage = ({changeTheme}) => {
-
+const IntroPage = React.memo(({ changeTheme }) => {
   useEffect(() => {
     gsap.from("#overlay2", {
       duration: 1.5,
@@ -23,7 +22,7 @@ const IntroPage = ({changeTheme}) => {
       opacity: 0,
       ease: "slow",
     });
-  });
+  }, []);
 
   return (
     <section className='S1'>
@@ -38,8 +37,7 @@ const IntroPage = ({changeTheme}) => {
                 className='themeDot'
                 data-mode='light'
                 id='light'
-                onClick={() => {changeTheme("light")
-              }}
+                onClick={() => changeTheme("light")}
               ></div>
               <div
                 className='themeDot'
@@ -84,10 +82,10 @@ const IntroPage = ({changeTheme}) => {
                 <h4 className='typing'>Hi , I am Nikhil Duttaroy</h4>
               </div>
               <div className='overlays' id='overlay2'>
-                <h4>Front - End Developer</h4>
+                <h4 className='typing'>Front - End Developer</h4>
               </div>
               <div className='overlays' id='overlay3'>
-                <h4>Engineering Graduate</h4>
+                <h4 className='typing'>Working @ Reliance Jio</h4>
               </div>
             </div>
           </div>
@@ -95,6 +93,6 @@ const IntroPage = ({changeTheme}) => {
       </div>
     </section>
   );
-};
+});
 
 export default IntroPage;
